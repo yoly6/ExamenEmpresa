@@ -1,0 +1,19 @@
+<body>
+  <div class="login-wrapper">
+    <form [formGroup]="loginForm"  action="" class="form">
+      <img src="img/avatar.png" alt="">
+      <h2>Login</h2>
+      <div class="input-group">
+        <input type="text" formControlName="usuario" id="login" required>
+        <label for="login">Usuario</label>
+      </div>
+      <div class="input-group">
+        <input type="password" formControlName="password" id="password" required>
+        <label for="password">contraseña</label>
+      </div>
+      <input type="submit" value="Login" class="submit-btn" (click)="onLogin()">
+    </form>
+
+   
+  </div>
+</body>
